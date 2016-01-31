@@ -21,7 +21,7 @@
     right: 10%;
     top: 200px;
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     background: #eee;
     z-index: 20;
     margin-top: 25px;
@@ -37,7 +37,7 @@
 .time-section-input {
     float: left;
     position: relative;
-    left: 15%;
+    left: 10%;
     /*padding-top: 64px;*/
 }
 
@@ -45,19 +45,21 @@
     height: 40px;
     text-align: center;
     font-size: 21px;
+    margin-top: 7%;
 }
 
 .time-section-button {
     float: left;
     position: relative;
-    left: 18%;
-    padding-top: 64px;
+    left: 13%;
+    /*padding-top: 64px;*/
 }
 
 .time-section-button button {
     display: inline-block;
     padding: 6px 12px;
     margin-bottom: 0;
+    margin-top: 17%;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.42857143;
@@ -86,7 +88,7 @@
 .display-count {
     background: lightgray;
     width: 20%;
-    height: 300px;
+    height: 260px;
     left: 10%;
     position: relative;
     float: left;
@@ -101,7 +103,7 @@
 .fingers-box {
     border: 1px solid lightgray;
     width: 20%;
-    height: 300px;
+    height: 260px;
     left: 20%;
     position: relative;
     float: left;
@@ -116,7 +118,7 @@
 .toes-box {
     border: 1px solid lightgray;
     width: 20%;
-    height: 300px;
+    height: 260px;
     left: 30%;
     position: relative;
     float: left;
