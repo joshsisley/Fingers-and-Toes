@@ -1,6 +1,9 @@
 /**
  * Created by joshuasisley on 1/30/16.
  */
+
+var fingersDiv = document.getElementById('fingers-box');
+var toesDiv = document.getElementById('toes-box');
 // Starts the timer when the button is pressed
 function startTimer() {
     var inputNumber = document.getElementById('number-input').value;
@@ -19,6 +22,10 @@ function clearInput() {
     clearAllIntervals();
     document.getElementById('number-input').value = "";
     document.getElementById('displayed-number').innerHTML = "0";
+    fingersDiv.style.color = '#555';
+    toesDiv.style.color = '#555';
+    toesDiv.style.backgroundColor = 'transparent';
+    fingersDiv.style.backgroundColor = 'transparent';
 }
 
 function clearAllIntervals() {
@@ -32,8 +39,6 @@ function countUp(maxNumber) {
     clearAllIntervals();
     var baseNum = 1;
     var displayedNumber = document.getElementById('displayed-number');
-    var fingersDiv = document.getElementById('fingers-box');
-    var toesDiv = document.getElementById('toes-box');
     var intervalId = setInterval(function(){
         console.log(intervalId);
         console.log('interval gets called');
@@ -41,21 +46,29 @@ function countUp(maxNumber) {
         console.log(newNum);
         if (newNum < maxNumber) {
             if (newNum % 5 === 0 && newNum % 3 === 0) {
-                fingersDiv.style.backgroundColor = 'green';
-                toesDiv.style.backgroundColor = 'red';
+                fingersDiv.style.backgroundColor = 'cornflowerblue';
+                fingersDiv.style.color = 'white';
+                toesDiv.style.backgroundColor = 'cornflowerblued';
+                toesDiv.style.color = 'white';
                 displayedNumber.innerHTML = newNum.toString();
             }
             else if (newNum % 5 === 0) {
                 fingersDiv.style.backgroundColor = 'transparent';
-                toesDiv.style.backgroundColor = 'red';
+                fingersDiv.style.color = '#555';
+                toesDiv.style.backgroundColor = 'cornflowerblue';
+                toesDiv.style.color = 'white';
                 displayedNumber.innerHTML = newNum.toString();
             }
             else if (newNum % 3 === 0) {
                 toesDiv.style.backgroundColor = 'transparent';
-                fingersDiv.style.backgroundColor = 'green';
+                toesDiv.style.color = '#555';
+                fingersDiv.style.backgroundColor = 'cornflowerblue';
+                fingersDiv.style.color = 'white';
                 displayedNumber.innerHTML = newNum.toString();
             }
             else {
+                toesDiv.style.color = '#555';
+                fingersDiv.style.color = '#555';
                 toesDiv.style.backgroundColor = 'transparent';
                 fingersDiv.style.backgroundColor = 'transparent';
                 displayedNumber.innerHTML = newNum.toString();
@@ -63,21 +76,29 @@ function countUp(maxNumber) {
         }
         if (newNum == maxNumber) {
             if (newNum % 5 === 0 && newNum % 3 === 0) {
-                fingersDiv.style.backgroundColor = 'green';
-                toesDiv.style.backgroundColor = 'red';
+                fingersDiv.style.backgroundColor = 'cornflowerblue';
+                fingersDiv.style.color = 'white';
+                toesDiv.style.backgroundColor = 'cornflowerblue';
+                toesDiv.style.color = 'white';
                 displayedNumber.innerHTML = newNum.toString();
             }
             else if (newNum % 5 === 0) {
                 fingersDiv.style.backgroundColor = 'transparent';
-                toesDiv.style.backgroundColor = 'red';
+                fingersDiv.style.color = '#555';
+                toesDiv.style.backgroundColor = 'cornflowerblue';
+                toesDiv.style.color = 'white';
                 displayedNumber.innerHTML = newNum.toString();
             }
             else if (newNum % 3 === 0) {
                 toesDiv.style.backgroundColor = 'transparent';
-                fingersDiv.style.backgroundColor = 'green';
+                toesDiv.style.color = '#555';
+                fingersDiv.style.backgroundColor = 'cornflowerblue';
+                fingersDiv.style.color = 'white';
                 displayedNumber.innerHTML = newNum.toString();
             }
             else {
+                fingersDiv.style.color = '#555';
+                toesDiv.style.color = '#555';
                 toesDiv.style.backgroundColor = 'transparent';
                 fingersDiv.style.backgroundColor = 'transparent';
                 displayedNumber.innerHTML = newNum.toString();

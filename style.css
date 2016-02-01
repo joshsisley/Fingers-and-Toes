@@ -1,5 +1,5 @@
 .header {
-    height: 200px;
+    height: 100px;
     background: cornflowerblue;
     position: absolute;
     left: 0;
@@ -8,11 +8,11 @@
 }
 
 .header h1 {
-    font-size: 49px;
+    font-size: 40px;
     color: white;
     left: 10%;
     position: absolute;
-    top: 19%;
+    /*top: 19%;*/
 }
 
 .input-row {
@@ -23,7 +23,7 @@
     position: absolute;
     left: 10%;
     right: 10%;
-    top: 200px;
+    top: 115px;
     padding-top: 10px;
     padding-bottom: 50px;
     background: #eee;
@@ -37,6 +37,7 @@
     position: relative;
     /*padding-top: 50px;*/
     float: left;
+    color: #555;
 }
 
 .time-section-input {
@@ -173,11 +174,11 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 430px;
+    top: 390px;
 }
 
 .display-count {
-    background: lightgray;
+    background: #555;
     width: 20%;
     height: 260px;
     left: 10%;
@@ -187,8 +188,9 @@
 }
 
 .display-count h1 {
-    font-size: 100px;
-    margin-top: 25%;
+    font-size: 115px;
+    margin-top: 22%;
+    color: white;
 }
 
 .fingers-box {
@@ -203,7 +205,7 @@
 }
 
 .fingers-box h1 {
-    margin-top: 36%;
+    margin-top: 33%;
 }
 
 .toes-box {
@@ -218,5 +220,261 @@
 }
 
 .toes-box h1 {
-    margin-top: 36%;
+    margin-top: 33%;
+}
+
+.activeClass {
+    background: cornflowerblue;
+    color: white;
+}
+
+@media only screen and (max-width: 1280px) {
+    .fingers-box h1 {
+        margin-top: 47%;
+    }
+
+    .toes-box h1 {
+        margin-top: 47%;
+    }
+
+    .display-count h1 {
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header h1 {
+        left: 2.5%;
+    }
+
+    .choose-time-section {
+        left: 2.5%;
+        right: 2.5%;
+    }
+
+    .display-count {
+        width: 30%;
+        left: 2.5%;
+    }
+
+    .display-count h1 {
+        margin-top: 22%;
+    }
+
+    .fingers-box {
+        width: 30%;
+        left: 5%;
+    }
+
+    .fingers-box h1 {
+        margin-top: 37%;
+    }
+
+    .toes-box {
+        width: 30%;
+        left: 7.5%;
+    }
+
+    .toes-box h1 {
+        margin-top: 37%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .header {
+        text-align: center;
+    }
+
+    .header h1 {
+        position: absolute;
+    }
+
+    .choose-time-section {
+        left: 2.5%;
+        right: 2.5%;
+    }
+
+    .time-section-question {
+        width: 95%;
+        text-align: center;
+    }
+
+    .time-section-input {
+        left: 20%;
+        width: 60%;
+    }
+
+    .time-section-input input {
+        width: 100%;
+        height: 78px;
+    }
+
+    .time-section-button {
+        clear: both;
+        left: 20%;
+        width: 60%;
+        /*top: -60px;*/
+    }
+
+    .time-section-button button {
+        width: 100%;
+        font-size: 29px;
+        height: 78px;
+    }
+
+    .restart-button {
+        clear: both;
+        left: 20%;
+        width: 30%;
+        /*top: -55px;*/
+    }
+
+    .restart-button button {
+        width: 100%;
+        height: 68px;
+        font-size: 25px;
+    }
+
+    .clear-button {
+        left: 20%;
+        width: 30%;
+        /*top: -55px;*/
+    }
+
+    .clear-button button {
+        width: 100%;
+        height: 68px;
+        font-size: 25px;
+    }
+
+    .display-count {
+        width: 95%;
+        left: 2.5%;
+        top: 330px;
+    }
+
+    .display-count h1 {
+        margin-top: 7%;
+    }
+
+    .fingers-box {
+        width: 46.25%;
+        left: 2.5%;
+        top: 365px;
+    }
+
+    .fingers-box h1 {
+        margin-top: 25%;
+    }
+
+    .toes-box {
+        width: 46.25%;
+        left: 5%;
+        top: 365px;
+    }
+
+    .toes-box h1 {
+        margin-top: 25%;
+    }
+}
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .header {
+        text-align: center;
+    }
+
+    .header h1 {
+        position: absolute;
+    }
+
+    .choose-time-section {
+        left: 2.5%;
+        right: 2.5%;
+    }
+
+    .time-section-question {
+        width: 95%;
+        text-align: center;
+    }
+
+    .time-section-input {
+        left: 20%;
+        width: 58.5%;
+    }
+
+    .time-section-input input {
+        width: 100%;
+        height: 78px;
+    }
+
+    .time-section-button {
+        clear: both;
+        left: 20%;
+        width: 60%;
+        top: -60px;
+    }
+
+    .time-section-button button {
+        width: 100%;
+        font-size: 29px;
+        height: 78px;
+    }
+
+    .restart-button {
+        clear: both;
+        left: 20%;
+        width: 30%;
+        top: -55px;
+    }
+
+    .restart-button button {
+        width: 100%;
+        height: 68px;
+        font-size: 25px;
+    }
+
+    .clear-button {
+        left: 20%;
+        width: 30%;
+        top: -55px;
+    }
+
+    .clear-button button {
+        width: 100%;
+        height: 68px;
+        font-size: 25px;
+    }
+
+    .display-count {
+        width: 95%;
+        left: 2.5%;
+        top: 330px;
+    }
+
+    .display-count h1 {
+        margin-top: 7%;
+    }
+
+    .fingers-box {
+        width: 46.25%;
+        left: 2.5%;
+        top: 365px;
+    }
+
+    .fingers-box h1 {
+        margin-top: 25%;
+    }
+
+    .toes-box {
+        width: 46.25%;
+        left: 5%;
+        top: 365px;
+    }
+
+    .toes-box h1 {
+        margin-top: 25%;
+    }
 }
