@@ -13,13 +13,21 @@
     </div>
     <div class="choose-time-section">
         <div class="time-section-question">
-            <h1>How many seconds would you like to choose? </h1>
+            <h1>How many seconds would you like to count to? </h1>
         </div>
-        <div class="time-section-input">
-            <input type="number" placeholder="Seconds" id="number-input" />
-        </div>
-        <div class="time-section-button">
-            <button onclick="startTimer()" type="button" id="startTimer">Start</button>
+        <div class="input-row">
+            <div class="time-section-input">
+                <input type="number" placeholder="Seconds" id="number-input" />
+            </div>
+            <div class="time-section-button">
+                <button onclick="startTimer()" type="button" id="startTimer">Start</button>
+            </div>
+            <div class="restart-button">
+                <button onclick="restartTimer()" type="button">Restart</button>
+            </div>
+            <div class="clear-button">
+                <button onclick="clearInput()" type="button">Reset</button>
+            </div>
         </div>
     </div>
     <div class="display-blocks-section">

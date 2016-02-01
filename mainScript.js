@@ -9,14 +9,36 @@ function startTimer() {
     countUp(inputNumber);
 }
 
+function restartTimer() {
+    var inputNumber = document.getElementById('number-input').value;
+    document.getElementById('displayed-number').innerHTML = "0";
+    countUp(inputNumber);
+}
+
+function clearInput() {
+    clearAllIntervals();
+    document.getElementById('number-input').value = "";
+    document.getElementById('displayed-number').innerHTML = "0";
+}
+
+function clearAllIntervals() {
+    // Make sure to clear out all old intervals to restart or start again
+    for (var i = 1; i < 99999; i++) {
+        clearInterval(i);
+    }
+}
+
 function countUp(maxNumber) {
+    clearAllIntervals();
     var baseNum = 1;
     var displayedNumber = document.getElementById('displayed-number');
     var fingersDiv = document.getElementById('fingers-box');
     var toesDiv = document.getElementById('toes-box');
     var intervalId = setInterval(function(){
+        console.log(intervalId);
         console.log('interval gets called');
         var newNum = baseNum++;
+        console.log(newNum);
         if (newNum < maxNumber) {
             if (newNum % 5 === 0 && newNum % 3 === 0) {
                 fingersDiv.style.backgroundColor = 'green';
